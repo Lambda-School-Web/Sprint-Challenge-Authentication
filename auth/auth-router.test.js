@@ -36,7 +36,6 @@ describe("Auth Router", () => {
       });
 
       if (added) {
-        console.log(added);
         const res = await request(server)
           .post("/api/auth/login")
           .send({ username: "jambis", password: "pass" })
